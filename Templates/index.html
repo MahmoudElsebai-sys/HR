@@ -1,0 +1,51 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/styles_home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<table border="1" >
+    <thead >
+        <tr>
+            <td><h2>Name</h2></td>
+            <td><h2>Description</h2></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><h3><a href="{% url 'employee_list'%}">Employee</a></h3></td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><h3><a href="#">Add User</a></h3></td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><h3><a href="#">Attendance</a></h3></td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><h3><a href="{% url 'department'%}">Department</a></h3></td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><h3><a href="#">Salary</a></h3></td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><h3><a href="#">Leave</a></h3></td>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <td><h3><a href="#">Performance Review</a></h3></td>
+            <td>Description</td>
+        </tr>
+    </tbody>
+</table>

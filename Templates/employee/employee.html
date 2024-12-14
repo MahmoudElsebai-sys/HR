@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body >
+    <div >
+                <h1>Employee</h1>
+                <br>
+                <button type="submit" ><a href="#">Add Employee</a></button>
+        <table border="1">
+            <thead >
+                <tr>
+                    <td>ID</td>
+                    <td>first_name</td>
+                    <td>last_name</td>
+                    <td>department</td>
+                    <td>job_titel</td>
+                </tr>
+            </thead>
+            <tbody>
+                {%for Employee in employee %}
+                <tr>
+                    <td>{{Employee.employee_id}}</td>
+                    <td>{{Employee.first_name}}</td>
+                    <td>{{Employee.last_name}}</td>
+                    <td>{{Employee.department}}</td>
+                    <td>{{Employee.job_titel}}</td>
+                </tr>
+                {%endfor%}
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
